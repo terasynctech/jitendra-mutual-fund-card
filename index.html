@@ -7,18 +7,200 @@
 
 <title>Jitendra Choudhary | Mutual Fund Distributor</title>
 
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f7fb;
+color:#222;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.65),
+rgba(0,0,0,.65)),
+url('hero-finance.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero-content{
+max-width:800px;
+animation:fadeIn 1.2s ease;
+}
+
+.logo{
+width:120px;
+height:120px;
+object-fit:contain;
+background:white;
+padding:10px;
+border-radius:50%;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero h3{
+font-weight:400;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+margin:8px;
+border-radius:40px;
+text-decoration:none;
+background:#0d6efd;
+color:white;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.section{
+padding:70px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+.title{
+text-align:center;
+margin-bottom:40px;
+font-size:32px;
+color:#0d6efd;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+text-align:center;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.counter{
+font-size:40px;
+font-weight:700;
+color:#0d6efd;
+}
+
+.calculator{
+background:white;
+padding:30px;
+border-radius:15px;
+max-width:500px;
+margin:auto;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.calculator input{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border:1px solid #ddd;
+border-radius:8px;
+}
+
+.testimonial{
+background:white;
+padding:30px;
+border-radius:15px;
+text-align:center;
+max-width:700px;
+margin:auto;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.footer{
+background:#0d6efd;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25d366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+z-index:999;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+</style>
 </head>
 
 <body>
-
-<!-- HERO -->
 
 <section class="hero">
 
 <div class="hero-content">
 
-<img src="images/profile.jpg" class="profile">
+<img src="logo.png" class="logo">
 
 <h1>Jitendra Choudhary</h1>
 
@@ -30,19 +212,11 @@
 
 <a href="tel:+918002451343" class="btn">📞 Call Now</a>
 
-<a href="https://wa.me/918002451343" class="btn">
-💬 WhatsApp
-</a>
-
-<a href="contact.vcf" download class="btn">
-💾 Save Contact
-</a>
+<a href="https://wa.me/918002451343" class="btn">💬 WhatsApp</a>
 
 </div>
 
 </section>
-
-<!-- ABOUT -->
 
 <section class="section">
 
@@ -52,10 +226,9 @@
 
 <p>
 
-Helping investors build wealth through
-Mutual Funds, SIPs, Fixed Deposits,
-Bonds, Retirement Planning and Tax Saving
-Investments.
+Helping investors build long-term wealth through
+Mutual Funds, SIPs, Bonds, Fixed Deposits,
+Tax Saving Investments and Retirement Planning.
 
 </p>
 
@@ -63,59 +236,45 @@ Investments.
 
 </section>
 
-<!-- PRODUCTS -->
-
 <section class="section">
 
-<h2 class="title">Investment Products</h2>
+<h2 class="title">Investment Solutions</h2>
 
 <div class="grid">
 
 <div class="card">
-
-<img src="images/mutualfund.jpg">
-
-<h3>Mutual Funds</h3>
-
-<p>SIP & Lump Sum Investments</p>
-
+<img src="sip-growth.jpg">
+<h3>SIP Planning</h3>
+<p>Build Wealth Through Disciplined Investing</p>
 </div>
 
 <div class="card">
-
-<img src="images/bonds.jpg">
-
-<h3>Bonds</h3>
-
-<p>Government & Corporate Bonds</p>
-
+<img src="financial-consultation.jpg">
+<h3>Financial Assessment</h3>
+<p>Personalized Financial Guidance</p>
 </div>
 
 <div class="card">
-
-<img src="images/retirement.jpg">
-
+<img src="retirement-planning.jpg">
 <h3>Retirement Planning</h3>
-
-<p>Secure Your Future</p>
-
+<p>Create Financial Freedom For Retirement</p>
 </div>
 
 <div class="card">
-
-<img src="images/portfolio.jpg">
-
+<img src="portfolio-review.jpg">
 <h3>Portfolio Review</h3>
+<p>Optimize Existing Investments</p>
+</div>
 
-<p>Professional Investment Analysis</p>
-
+<div class="card">
+<img src="child-education.jpg">
+<h3>Child Future Planning</h3>
+<p>Secure Education & Future Goals</p>
 </div>
 
 </div>
 
 </section>
-
-<!-- SERVICES -->
 
 <section class="section">
 
@@ -123,59 +282,43 @@ Investments.
 
 <div class="grid">
 
+<div class="card">Mutual Funds</div>
+<div class="card">Fixed Deposits (FD)</div>
+<div class="card">Bonds</div>
 <div class="card">Financial Assessment</div>
-
 <div class="card">Tax Assessment</div>
-
-<div class="card">Child Future Planning</div>
-
-<div class="card">Retirement Planning</div>
-
 <div class="card">Portfolio Review</div>
-
-<div class="card">SIP Planning</div>
+<div class="card">Child Future Planning</div>
+<div class="card">Retirement Planning</div>
 
 </div>
 
 </section>
 
-<!-- COUNTERS -->
-
 <section class="section">
 
-<h2 class="title">Why Invest Through Us</h2>
+<h2 class="title">Why Choose Us</h2>
 
 <div class="grid">
 
 <div class="card">
-
 <div class="counter">100+</div>
-
-<p>Happy Clients</p>
-
+<p>Happy Investors</p>
 </div>
 
 <div class="card">
-
 <div class="counter">500+</div>
-
 <p>SIP Accounts</p>
-
 </div>
 
 <div class="card">
-
 <div class="counter">10+</div>
-
 <p>Years Experience</p>
-
 </div>
 
 </div>
 
 </section>
-
-<!-- SIP CALCULATOR -->
 
 <section class="section">
 
@@ -183,31 +326,17 @@ Investments.
 
 <div class="calculator">
 
-<input
-type="number"
-id="sip"
-placeholder="Monthly SIP Amount">
+<input type="number" id="sip" placeholder="Monthly SIP Amount">
 
-<input
-type="number"
-id="years"
-placeholder="Investment Years">
+<input type="number" id="years" placeholder="Investment Years">
 
-<button
-class="btn"
-onclick="calculateSIP()">
-
-Calculate
-
-</button>
+<button class="btn" onclick="calculateSIP()">Calculate</button>
 
 <h3 id="result"></h3>
 
 </div>
 
 </section>
-
-<!-- TESTIMONIAL -->
 
 <section class="section">
 
@@ -216,16 +345,12 @@ Calculate
 <div class="testimonial">
 
 <p id="testimonial">
-
-Professional Financial Planning
-
+"Professional Financial Guidance and Excellent Service."
 </p>
 
 </div>
 
 </section>
-
-<!-- CONTACT -->
 
 <section class="section">
 
@@ -245,19 +370,11 @@ Professional Financial Planning
 
 <br>
 
-<a
-href="https://wa.me/918002451343"
-class="btn">
-
-WhatsApp
-
-</a>
+<a href="https://wa.me/918002451343" class="btn">WhatsApp Now</a>
 
 </div>
 
 </section>
-
-<!-- FOOTER -->
 
 <div class="footer">
 
@@ -269,17 +386,55 @@ WhatsApp
 
 </div>
 
-<!-- FLOATING WHATSAPP -->
-
-<a
-href="https://wa.me/918002451343"
-class="whatsapp">
-
-WhatsApp
-
+<a href="https://wa.me/918002451343" class="whatsapp">
+💬 WhatsApp
 </a>
 
-<script src="script.js"></script>
+<script>
+
+function calculateSIP(){
+
+let sip=document.getElementById("sip").value;
+
+let years=document.getElementById("years").value;
+
+let rate=12/100/12;
+
+let months=years*12;
+
+let future=
+sip*
+((Math.pow(1+rate,months)-1)/rate)*
+(1+rate);
+
+document.getElementById("result").innerHTML=
+"Estimated Value: ₹ "+
+Math.round(future).toLocaleString();
+
+}
+
+const testimonials=[
+"Professional Financial Guidance and Excellent Service.",
+"Very Helpful For SIP & Retirement Planning.",
+"Trusted Mutual Fund Advisor."
+];
+
+let i=0;
+
+setInterval(()=>{
+
+i++;
+
+if(i>=testimonials.length){
+i=0;
+}
+
+document.getElementById("testimonial").innerHTML=
+testimonials[i];
+
+},3000);
+
+</script>
 
 </body>
 </html>
